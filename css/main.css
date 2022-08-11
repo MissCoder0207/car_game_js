@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+
+}
+
+#road{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: #c7c7c7;
+}
+
+#road div{
+    position: absolute;
+    width: 350px;
+    height: 180px;
+    background-size: 350px 180px ;
+}
+
+#car{
+    top: 200px;
+    background-image: url("../images/yellow-car.png");
+}
+#carRed{
+    left: 1400px;
+    background-image: url("../images/red-car.png");
+    animation: redCarMove 4s infinite linear;
+}
+#carRed1{
+    top: 200px;
+    left: 1400px;
+    background-image: url("../images/red-car.png");
+    animation: redCarMove 4s infinite linear;
+    animation-delay: 1.5s;
+}
+#carRed2{
+    top: 400px;
+    left: 1400px;
+    background-image: url("../images/red-car.png");
+    animation: redCarMove 4s infinite linear;
+    animation-delay: 3s;
+}
+
+
+@keyframes redCarMove {
+    0%{
+        left: 1400px;
+    }
+    100%{
+        left: -400px;
+    }
+}
+
+#over{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 400px;
+    height: 300px;
+    display: none;
+    background-color: #c7c7c7;
+    text-align: center;
+    padding-top: 70px;
+    border-radius: 20px;
+}
+#over h1{
+    margin-bottom: 50px;
+}
+
+.btn{
+    padding: 5px 40px;
+    font-size: 1.5rem;
+}
